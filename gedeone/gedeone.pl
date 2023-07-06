@@ -1,3 +1,7 @@
+% Gedeone, talking with his friend about his nephews, answers about their age as follow:
+% In 11 years, Dario will have my age of when he (Dario) was 6 times yunger than me (Gedeone). 
+% Umberto, has 3 years more than Dario, and minus 3 years than the difference between me (Gedeone) and Dario.
+
 :- lib(fd).
 
 csp([Dario, Umberto, Gedeone]):-
