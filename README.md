@@ -29,4 +29,4 @@ CLP Machine: Foundamental Steps
 - Consistency s
 	- check the satisfiability of the constraint store
 
-The following exercises are from my Univeristy period. You can find simple exercises and more complex. 
+The following exercises are from my University period. You can find simple exercises and more complex. 
