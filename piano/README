@@ -7,12 +7,14 @@ They have to decide who and when performs each action.
 - Carletto can distract the dog for 4 minutes, Pierino for 2, Tommaso for 3.
 - Carletto can substract the cake in 2 minutes, Pierino in 5, Tommaso in 4.
 
-They can start to distract the dog only 1 minute after the grandmother start to speech with one of them
+They can start to distract the dog only 1 minute after the grandmother start to speek with one of them
 and only 1 minute before she finishes. 
 
 They can take the cake only when both the grandmother and the dog are distracted for all the duration. 
 
-In this simple problem we use the predicate element.
+
+
+In this simple problem we use the predicate 'element'.
 For example, in "element(Nonna, [5,3,2], DurataNonna)" we associate [5,3,2] at the children 
 [1,2,3], and we put it into the 'DurataNonna' variable. So when we do the "alldifferent" and 
 all the constraints, we obtain exactly what we want.  
