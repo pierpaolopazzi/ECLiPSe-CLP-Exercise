@@ -1,3 +1,5 @@
+#Which statements are true?
+
 :- lib(fd).
 
 
