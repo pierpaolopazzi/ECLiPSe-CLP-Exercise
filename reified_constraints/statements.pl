@@ -1,3 +1,25 @@
+% Which statements are true?
+% 1- The answer to #6 and #7 are the same.
+% 2- #1 is false.
+% 3- The answer to #4 and #20 are different.
+% 4- The answer to #3 and #20 are different.
+% 5- The answer to this statement is different from the answe to #19
+% 6- #2 is true.
+% 7- #15 is true.
+% 8- The answer to  #11 and #19 are the same.
+% 9- #10 is true.
+% 10- #13 is false.
+% 11- Mrs. Jones is allergic to strawberries.
+% 12- #16 is true.
+% 13- #12 is true.
+% 14- The answer to this statements is the same as the answer to #11.
+% 15- At least half the statements in this problem are false.
+% 16- At least half the statements in this problem are true.
+% 17- The answer to #9 and #4 are the same.
+% 18- #7 is true.
+% 19- Mrs. Jones first name is Shirley.
+% 20- The answer to #3 and #4 are different.
+
 :- lib(fd).
 
 
