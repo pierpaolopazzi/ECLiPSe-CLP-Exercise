@@ -1,3 +1,15 @@
+% Di 6 bambini si sa che esattamente 2 hanno rubato la marmellata. Ma chi?
+% Aldo dice "Dario ed Elio"
+% Bruno dice "Carlo e Franco"
+% Carlo dice "Franco ed Elio"
+% Dario dice "Aldo ed Elio"
+% Elio dice "Carlo e Bruno"
+%
+% Franco è assente.
+% Uno dei 5 bambini ha nominato due innocenti. Gli altri hanno nominato un innocente ed un colpevole.
+% Si scirva un programma CLP che scopre chi ha rubato la marmellata.
+
+
 :- lib(fd).
 
 
