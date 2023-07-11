@@ -1,0 +1,14 @@
+Una colf deve svolgere i lavori di casa nell'arco di una mattinata. Le attività da svolgere sono:
+- Lavare il bucato: ci vogliono 45 minuti, la lavatrice consuma 1,7 kW.
+- Asciugare il bucato: asciugatrice per 1 ora, 1 kW.
+- Stirare il bucato: 1 ora, il ferro da stiro consuma 2 kW.
+- Lavare i piatti: 40 minuti di lavastoviglie, la lavastoviglie consuma 1.8 kW.
+- Preparare la pizza: bisogna preparare l'impasto (15 minuti), lasciarlo lievitare da 1 a 2 ore, poi
+  va cotta in forno per 15 minuti. Il forno consuma 2 kW e va preriscaldato per 5 minuti. (bisogna accenderlo 5 minuti prima di usarlo):
+- Pulire casa: 2 ore.
+
+Calcolare la sequenza delle attività per far sì che la colf possa tornare a casa entro 3 ore e 20 minuti, sapendo che non si devono mai superare i 3 kW di potenza consumata,
+altrimenti salta il contatore,
+
+gli elettrodomestici possono lavorare in autonomia senza intervento umano (a parte il ferro da stiro).
+e che, ovviamente, il bucato va prima lavato, poi asciugato e infine stirato. 
