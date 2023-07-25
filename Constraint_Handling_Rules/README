@@ -11,7 +11,7 @@ In this case, if guard is true, takes away from the constraint store c1 and c2 a
 
 SIMPAGATION RULE:
 c1 \ c2 <=> guard | body.
-Is the same of simplification but only c2 is tatake out from the constraint store.
+Is the same of simplification but only c2 is taken out from the constraint store.
 
 If you want to use CHR, you need first to load 'chr' library or the newest implementation ech.
 CHR needs a file .chr with only CHR rules inside. 
