@@ -1,0 +1,26 @@
+handler boolean.
+constraints neg/2, and/3, or/3.
+
+neg(1,X) <=> X=0.
+neg(0,X) <=> X=1.
+neg(X,1) <=> X=0.
+neg(X,0) <=> X=1.
+neg(X,X) <=> false.
+neg(A,B) ==> neg(B,A).
+
+and(X,X,C) <=> C=X.
+and(_,0,C) <=> C=0.
+and(0,_,C) <=> C=0.
+and(A,B,1) <=> A=1,B=1.
+and(A,1,0) <=> A=0.
+and(1,B,0) <=> B=0.
+and(A,B,C) ==> and(B,A,C).
+
+or(X,X,C) <=> C=X.
+or(X,0,C) <=> C=X.
+or(0,X,C) <=> C=X.
+or(X,Y,0) <=> X=0,Y=0.
+or(X,0,1) <=> X=1.
+or(0,Y,1) <=> Y=1. 
+or(X,Y,C) ==> or(Y,X,C).
+
