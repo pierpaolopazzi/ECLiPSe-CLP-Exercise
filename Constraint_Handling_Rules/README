@@ -1,0 +1,26 @@
+THE CONSTRAINT HANDLING RULES ARE USE TO DEFINE NEW CONSTRAINT RESOLUTOR.
+CONSTRAINTS ARE DEFINED BY RULES WHICH CAN BE 3 TYPES: SIMPLIFICATION, PROPAGATION AND SIMPAGATION.
+
+PROPAGATION RULE:
+c1, c2, ... ==> guard(optional) | body.
+If C1 and C2,... are in the store, it verify the guard and if true, apply body.
+
+SIMPLIFICATION RULE:
+c1, c2, ... <=> guard(optional) | body.
+In this case, if guard is true, takes away from the constraint store c1 and c2 and apply body.
+
+SIMPAGATION RULE:
+c1 \ c2 <=> guard | body.
+Is the same of simplification but only c2 is tatake out from the constraint store.
+
+If you want to use CHR, you need first to load 'chr' library or the newest implementation ech.
+CHR needs a file .chr with only CHR rules inside. 
+Use the following steps:
+[eclipse 1] lib(chr).
+[eclipse 2] chr2pl(filename).
+[eclipse 3] [filename].
+
+Instead, the 'ech' library is integrated in prolog. It is not necessary a separeted compilation. 
+In the following files you can see two example of constraints made by CHR: 
+- leq (less_or_equal): you can find both library (chr and ech).
+- boolv2.chr that implements 'or', 'negate' and 'and'. 
