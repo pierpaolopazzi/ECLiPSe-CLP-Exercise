@@ -1,0 +1,14 @@
+The problem:
+
+A nurse needs to visit some patients at their home. Every single patient has to been visited in a time window.
+The file pazienti.pl has for every patient a fact:
+  paziente(ID, OrarioMinimo, OrarioMassimo),
+where
+  ID is the unique number of patient,
+  OrarioMinimio and OrarioMassimo is the slot time of the visit
+File pazienti.pl contains another fact:
+  distanza(patient1, patient2, cost).
+where 
+  cost is the cost to go from patient1 to patient2.
+Write a CLP(FD) program for searching the best path minimizing the distance. 
+Consider the visit a snapshot (has not duration).
