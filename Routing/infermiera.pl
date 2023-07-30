@@ -6,13 +6,21 @@
 
 infermiera(PathL):-
 	
-
+	% - Extract my data
+ 
 	findall(ID, paziente(ID,_,_), PazList),
 	length(PazList, NumeroPaz),
 	Nplace is NumeroPaz+1,
-	length(PathL,Nplace),
+
+ 	% - Create the Path
+ 
+ 	length(PathL,Nplace),
 	domain(PathL, NumeroPaz),
+ 
 	alldifferent(PathL),
+
+ 	% - Apply the distance and Time window constraints
+  
 	applyDistaConstr(PathL,Dist,0),	
 	minimize(labeling(PathL),Dist).
 	
