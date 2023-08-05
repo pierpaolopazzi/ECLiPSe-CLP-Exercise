@@ -1,3 +1,8 @@
+%% 6 activities: each activity described by a predicate:
+%% task(NAME, DURATION, LISTofPRECEDINGTASKS, MACHINE).
+%% Machines are unary resources.
+%% Minimising the maximum ending time END is required.
+
 :- lib(fd).
 :- lib(edge_finder).
 
