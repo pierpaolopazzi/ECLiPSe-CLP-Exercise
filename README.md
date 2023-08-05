@@ -30,3 +30,7 @@ CLP Machine: Foundamental Steps
 	- check the satisfiability of the constraint store
 
 The following exercises are from my University period. You can find simple exercises and more complex. 
+
+# **CLINGO EXERCISES**
+
+To install clingo, follow the instructions in https://potassco.org/clingo/
