@@ -1,0 +1,17 @@
+In un autosalone sono esposte quattro auto d'epoca: una Ferrari, un'Alfa Romeo, una Lamborghini e una Maserati. 
+Il proprietario viene contattato da cinque clienti che gli telefonano per avere informazioni sulle vetture.
+
+Egli risponde loro dando a ciascuno 3 informazioni su una delle vetture, ma a causa della confusione che c'è nell'autosalone, 
+commette qualche errore e a qualcuno fornisce qualche informazione sbagliata. Nelle cinque telefonate fornisce queste informazioni:
+
+    La Lamborghini è gialla, è la seconda più cara e ha gli interni marroni
+    La Ferrari ha gli interni marroni, è la meno cara ed è rossa.
+    L'automobile nera è la più cara, è l'Alfa Romeo e ha gli interni color panna
+    La meno costosa ha gli interni blu, è la Lamborghini ed è rossa
+    L'Alfa Romeo ha il secondo prezzo più basso, ha gli interni blu e la carrozzeria grigia.
+
+Sapendo che un'automobile ha gli interni verdi, si trovi la soluzione in cui il titolare dell'autosalone ha fornito meno 
+informazioni sbagliate in totale.
+
+N.B: ciascuna telefonata fornisce 3 informazioni; ad esempio, nella quarta le informazioni sono 
+    "La meno costosa ha gli interni blu", "La meno costosa è la Lamborghini" e "La meno costosa è rossa".
