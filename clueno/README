@@ -1,0 +1,60 @@
+DESCRIZIONE PROBLEMA
+
+Clueno è un gioco da tavolo, variante del più famoso Cluedo. 
+Ci sono 4 giocatori che devono scoprire come è avvenuto un delitto seguendo degli inidizi. Nel gioco ci sono
+
+    6 carte personaggio
+    6 carte arma
+
+All'inizio del gioco vengono scelti a caso, all'insaputa dei giocatori, una carta personaggio e una carta arma 
+che vengono riposte in una busta. Queste 2 carte rappresentano, rispettivamente, l'assassino e l'arma dell'omicidio. 
+Le rimanenti 6·2 − 2 = 10 carte vengono distribuite fra i 4 giocatori, quindi qualche giocatore riceverà 3 carte e 
+qualche giocatore ne riceverà solo 2.
+
+A questo punto, inizia il gioco. Ciascun giocatore, a turno, effettua una chiamata: nomina uno dei personaggi e un'arma. 
+Se fra gli altri giocatori ce n'è uno che ha in mano una delle 2 carte nominate, glie la mostra, 
+senza mostrarla agli altri 2 giocatori (poi si riprende la carta). Si noti che per ogni chiamata, 
+il giocatore chiamante riceve al più una carta: se gli altri giocatori hanno almeno una carta di quelle che sono state chiamate, 
+allora il giocatore che ha effettuato la chiamata riceverà esattamente una carta: anche se tutte e due le carte chiamate sono in
+mano a qualche suo avversario, gli verrà fornita solo una delle carte che ha richiesto.
+
+A questo punto, il giocatore che ha effettuato la chiamata è venuto a conoscenza di una nuova carta e depenna dal suo taccuino 
+la carta che gli è stata mostrata (ovviamente, visto che ce l'aveva in mano un altro giocatore, vuol dire che quella carta 
+non è una di quelle nella busta). 
+Scopo del gioco è scoprire quali sono le 2 carte nella busta. Si noti che il giocatore che effettua la chiamata può 
+anche chiamare delle carte che lui stesso ha in mano: questo può essere fatto per 
+disorientare gli avversari, per fare un 'bluff', oppure per cercare di ottenere una carta specifica.
+
+Voi siete un osservatore esterno. Non potete vedere le carte dei giocatori, né quelle nella busta. 
+Però potete sentire tutte le chiamate e vedere qual è il giocatore che fornisce la carta (anche se non potete vedere la carta). 
+Vi viene richiesto di scoprire le due informazioni (assassino e arma) basandovi solo sulle chiamate che sentite.
+
+Le chiamate sono riportate in un file risposte.pl . Per ogni chiamata, il file riporta un fatto Prolog
+risposta(Richiedente,Rispondente,Assassino,Arma)
+
+che riporta
+
+    Richiedente: un numero da 1 a 4 che identifica il giocatore che ha effettuato la chiamata
+    Rispondente: un numero da 0 a 4.
+        se il valore è 0, significa che nessun giocatore ha risposto, quindi tutte e 3 le carte chiamate sono o 
+        nella busta o in mano al giocatore chiamante;
+        altrimenti, un valore compreso fra 1 e 4 rappresenta l'identificatore del giocatore che ha risposto alla chiamata, 
+        fornendo una carta
+    Assassino: un intero compreso fra 1 e 6 che rappresenta l'identificatore del personaggio nella chiamata
+    Arma: un intero fra 1 e 6 che rappresenta l'identificatore dell'arma nella chiamata
+
+Ad esempio, risposta(1,2,3,4) significa che il giocatore 1 ha effettuato una chiamata in cui l'assassino era il personaggio 3, 
+l'arma era la numero 4; il giocatore 2 ha fornito una delle due carte richieste.
+
+Il vostro obiettivo è capire chi possiede ciascuna carta (e quali carte sono nella busta).
+
+Da una chiamata a cui è stata data risposta risposta(Richiedente,Rispondente,Assassino,Arma) dove Rispondente ≠ 0 si può quindi 
+dedurre che il rispondente possiede almeno una delle 2 carte richieste (ovvero Assassino, Arma).
+
+Da una chiamata a cui non è stata data risposta, ovvero per cui si ha un fatto risposta(Richiedente,0,Assassino,Arma) 
+(con Rispondente=0) si può dedurre che ciascuna delle 2 carte chiamate (ovvero Assassino, Arma) è o in 
+mano a Richiedente o nella busta.
+
+
+
+
