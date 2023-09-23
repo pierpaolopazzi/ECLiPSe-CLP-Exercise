@@ -1,0 +1,27 @@
+DESCRIZIONE PROBLEMA
+
+Ad un pranzo di matrimonio, bisogna decidere in quali tavoli far sedere ciascuno degli invitati. 
+Il numero NI di invitati è riportato nel file matrimonio.pl in un fatto
+
+num_invitati(NI).
+
+Si ha poi un fatto
+num_tavoli(NT).
+
+che riporta il numero di tavoli NT.
+
+Purtroppo, non tutti gli invitati vanno d'accordo fra di loro: sono stati invitati genitori che si sono 
+separati ed altre persone che potrebbero scatenare delle risse se si trovassero allo stesso tavolo. Gli invitati che 
+sono in conflitto sono riportati in un predicato
+conflitto(I,J).
+
+Se due persone I e J sono in conflitto, non possono sedere allo stesso tavolo.
+
+Si desidera invece far sedere, per quanto possibile, le persone che si conoscono allo stesso tavolo. 
+Se due persone I e J si conoscono, il predicato
+conosce(I,J)
+
+è vero.
+
+Si calcoli una possibile assegnamento delle persone ai tavoli, massimizzando il numero di persone che si conoscono 
+che si trovano allo stesso tavolo.
